@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZkousimSiKodit
 {
@@ -10,6 +6,10 @@ namespace ZkousimSiKodit
     {
         static void Main(string[] args)
         {
+            CapsLook capsLook = new CapsLook();
+            string testString = "tADY CHCI ZMĚNIT VELKÁ PÍSMENA: jANA A oNDRA, MALÉ ĚŠČŘŽÝÁ, velké ěščřžýáíé";
+            Console.WriteLine(capsLook.changeCase(testString));
+            Console.ReadLine();
         }
     }
 }
