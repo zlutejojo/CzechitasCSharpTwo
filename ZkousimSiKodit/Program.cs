@@ -9,6 +9,11 @@ namespace ZkousimSiKodit
             CapsLook capsLook = new CapsLook();
             string testString = "tADY CHCI ZMĚNIT VELKÁ PÍSMENA: jANA A oNDRA, MALÉ ĚŠČŘŽÝÁ, velké ěščřžýáíé";
             Console.WriteLine(capsLook.changeCase(testString));
+
+            StringExcercise stringExcercise = new StringExcercise();
+            stringExcercise.doExcercise();
+
+
             Console.ReadLine();
         }
     }

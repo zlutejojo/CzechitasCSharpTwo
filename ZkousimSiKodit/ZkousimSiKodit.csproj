@@ -46,6 +46,7 @@
     <Compile Include="CapsLook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StringExcercise.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
