@@ -1,6 +1,6 @@
 ﻿namespace ZkousimSiKodit
 {
-    internal class CapsLook
+    internal class CapsLock
     {
       
         public string changeCase(string stringToChange)
@@ -9,13 +9,14 @@
             char changedChar;
             foreach (char letter in stringToChange)
             {
-                if (char.IsLower(letter)){
+                if (char.IsLower(letter))
+                {
                     changedChar = char.ToUpper(letter);
                 } else
                 {
                     changedChar = char.ToLower(letter);
                 }
-                changedString = changedString + changedChar;
+                changedString += changedChar;
             }
             return changedString;
         }
