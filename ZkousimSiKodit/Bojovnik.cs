@@ -11,14 +11,17 @@ namespace ZkousimSiKodit
 {
     internal class Bojovnik
     {
+        public Guid Id { get; private set; }
         public string Jmeno { get; private set; }
         public int Sila { get; private set; }
         public int Brneni { get; private set; }
         public int Zivot { get; private set; }
-        public bool jeZivy = true;
+        public bool jeZivy { get; private set; } = true;
+        
 
         public Bojovnik(string jmeno, int sila, int brneni, int zivot)
         {
+            Id = Guid.NewGuid();
             Jmeno = jmeno;
             if(sila < 10)
             {
@@ -89,7 +92,7 @@ namespace ZkousimSiKodit
                 {
                     bojovnik.jeZivy = false;
                 }
-                Console.WriteLine($"Bojovnik {(bojovnik.jeZivy ? $"prezil a ma pocet zivotu {bojovnik.Zivot}" : "je mrtev")}.");
+                Console.WriteLine($"Bojovnik {bojovnik.Jmeno} {(bojovnik.jeZivy ? $"prezil a ma pocet zivotu {bojovnik.Zivot}" : "je mrtev")}.");
             }
         }
 

@@ -45,12 +45,18 @@ namespace ZkousimSiKodit
             Bojovnik vasek = new Bojovnik("Vasek", 10, 20, 20);
             vasek.vypisInfo();
 
+            //vasek.utocNa(petr);
+            //vasek.utocNa(petr);
+            //vasek.utocNa(petr);
+            Arena velkaArena = new Arena(10);
+            velkaArena.pridejBojovnika(petr);
+            velkaArena.pridejBojovnika(vasek);
+            //velkaArena.zacniBoj(petr, vasek);
+            //velkaArena.zacniBoj(vasek, petr);
+            velkaArena.zacniBoj(petr, petr);
             
-            vasek.utocNa(petr);
-            vasek.utocNa(petr);
-            vasek.utocNa(petr);
 
             Console.ReadLine();
-}
-}
+        }
+    }
 }
