@@ -67,10 +67,7 @@ it was the grayish white of old porridge.";
                 {
                     jeSpravneUkoncen = true;
                     break;
-                } else
-                {
-                    jeSpravneUkoncen = false;
-                }
+                } 
             }
             Console.WriteLine("Text je spravne ukoncen interpunkci - ".PadRight(padding) + (jeSpravneUkoncen == true));
 
@@ -104,7 +101,8 @@ it was the grayish white of old porridge.";
             int indexOfFirstUpperCaseInReversedString = 0;
             foreach (char ch in reversedSubstringOfText)
             {
-                if (Char.IsUpper(ch)){
+                if (Char.IsUpper(ch))
+                        {
                     break;
                 }
                 indexOfFirstUpperCaseInReversedString++;
