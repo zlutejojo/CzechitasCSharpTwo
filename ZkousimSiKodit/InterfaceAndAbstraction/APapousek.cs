@@ -13,15 +13,28 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
         {
         }
 
+        public override string AbstraktniHlasPrazdny2 { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public override void PromluvSiJakChces()
         {
             Console.WriteLine("A kikiriki");
         }
 
-        public override void PromluvSiJakChcesStaticky()
+        
+        /*public override void PromluvSiJakChcesStaticky()
         {
             Console.WriteLine("AS pipipip");
-        }
+        }*/
+
+        // class:abstract
+        // base class member
+        // abstract - nehotova, neimplemntovana, strednik, musi se prepsat v potomkovi
+        // virtual - implementovana, klasicky zapis s {}, ale muzu ji prepsat
+
+        // inherited  class: sealed
+        // inherited class member
+        // override - prepise prechozi implemnatace predka, ktere jsou virtual nebo abstract
+        // new - neprepisuje, ale skryva, nepouzivat!
 
     }
 }

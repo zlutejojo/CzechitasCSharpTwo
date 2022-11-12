@@ -1,17 +1,39 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using ZkousimSiKodit.InterfaceAndAbstraction;
+
 
 namespace ZkousimSiKodit
 {
     internal class Program
     {
+        private static readonly string Nemenna2 = "neco";
+        //const string nemenna = "nemenna";
+        //nemenna = "zmenenna";
+        //Nemenna2 = "nic";
+        // cca totez jako konstatna
+
         static void Main(string[] args)
         {
 
+            string adresar =
+               Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+               "TelSeznam");
 
+            string jmenoSouboruSCestou = Path.Combine(adresar, "Seznam.txt");
 
+            //System.IO.File.WriteAllText("");
+            
+            //File.WriteAllText(jmenoSouboruSCestou, "Muj prvni text");
+            
+
+            AMluveni m = new APapousek("j");
+            
+            
+            
             // 1. Nalezněte slova začínající písmenem 'M'
             List<string> ovoce = new List<string>() { "Merunka", "Jablko", "Pomeranc", "Meloun", "Malina", "Limetka" };
 

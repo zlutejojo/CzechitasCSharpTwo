@@ -10,7 +10,11 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
     {
         //nemuzu mit nic implementovaneho, leda az od 8.0
         //public string AbstraktniHlas = "takhle zni muj abstratkni hlas v base tride";
+        //property
         string IHlasPrazdny { get; set; }
+        //string IHlasPrazdny { get; set; } = "ahoj";
+        //field, obsahuje data v pameti, nemuze byt
+        //string IHlasPrazdny2;
         //TODO tohle jsem nemohla mit kvuli modifikatoru 
         //public string AbstraktniHlasPrazdny { get; set; }
         //nemuzu mit static
@@ -24,7 +28,7 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
             this.AbstraktniHlasPrazdny = hlas;
         }*/
 
-        
+
         /*
         public AMluveni(string hlasStaticky)
         {
@@ -39,5 +43,7 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
 
         }*/
         void PromluvIHlasem();
+
+        //neni v pameti, proto tam nemuzou byt static, const atd.
     }
 }

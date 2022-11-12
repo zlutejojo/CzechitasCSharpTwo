@@ -47,6 +47,7 @@
     <Compile Include="Bojovnik.cs" />
     <Compile Include="CapsLook.cs" />
     <Compile Include="DomaciMazlik.cs" />
+    <Compile Include="FileAndStream\TestingFile.cs" />
     <Compile Include="InterfaceAndAbstraction\AIPapousek.cs" />
     <Compile Include="InterfaceAndAbstraction\ALetani.cs" />
     <Compile Include="InterfaceAndAbstraction\AMluveni.cs" />

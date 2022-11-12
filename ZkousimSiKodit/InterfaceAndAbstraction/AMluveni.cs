@@ -10,9 +10,11 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
     {
         public string AbstraktniHlas = "takhle zni muj abstratkni hlas v base tride";
         public string AbstraktniHlasPrazdny { get; set; }
+        public abstract string AbstraktniHlasPrazdny2 { get; set; }
+
         public static string AbstraktniHlasStaticky = "takhle zni muj abstratkni hlas v base tride";
         public static string AbstraktniHlasStatickyPrazndy { get; set; }
-        //DOTAZ kdy se tohle pouziva?
+       
         public const int PocetHlasivek = 1;
 
         public AMluveni(string hlas)
@@ -35,6 +37,7 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
 
         }
 
+        //muzu mit statickou metodu, ktera neni abstraktni
         public static void PromluvAbstraktnimHlasemStatickym()
         {
             Console.WriteLine("Rikam:" + AbstraktniHlasStaticky);
@@ -43,6 +46,8 @@ namespace ZkousimSiKodit.InterfaceAndAbstraction
         }
 
         public abstract void PromluvSiJakChces();
-        public abstract void PromluvSiJakChcesStaticky();
+        
+        //nemuzu mit static
+        //public static abstract void PromluvSiJakChcesStaticky();
     }
 }
